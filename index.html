@@ -7,12 +7,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="http://cdn.fluidplayer.com/v2/current/fluidplayer.min.css" type="text/css"/>
-  <script src="http://cdn.fluidplayer.com/v2/current/fluidplayer.min.js"></script>
+  <script src="https://cdn.fluidplayer.com/3.0.0/fluidplayer.min.js"></script>
 </head>
 <body>
   <div id="main-page">
-	  <video id="hls-video" controls="controls" autoplay="autoplay" crossorigin="crossorigin">
+	  <video id="hls-video">
       <source src="https://tempinfobase.jagobd.com:444/cZVydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZT00U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/atnbd-8-org.stream/chunks.m3u8" type="application/x-mpegURL" />
     </video>
   </div>
@@ -20,8 +19,8 @@
   fluidPlayer(
     'hls-video', {
       layoutControls: {
-          autoPlay: true,
-          fillToContainer: true
+            fillToContainer: true,
+            autoplay: true
       }
     }
   );
@@ -41,5 +40,6 @@
     videodisplay.style.overflow = scroll;
   }
   </script>
+  <script src="index.js" type="module"></script>
 </body>
 </html>
